@@ -1,0 +1,109 @@
+body {
+  background-color: "whitesmoke";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.todolist {
+
+background-color: darkslateblue;
+margin: auto;
+width: "50%";
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+box-shadow: 0 1px 1px rgba(0,0,0,0.15), 0 10px 0 -5px #eee,
+            0 10px 1px -4px rgba(0,0,0,0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0,0,0,0.15);
+padding: 80px;            
+}
+.line{
+  text-decoration: line-through;
+}
+.lol{
+  font-size: 24px;
+  color: darkorange;
+  font-weight: bold;
+}
+
+.todolist{
+  display: flex;
+  justify-content: flex-start;
+  
+  padding: 50px 20px 0;
+  width: 70%;
+  border-bottom: 1px solid black;
+  font-weight: 100;
+}
+input[type=checkbox]{
+  margin-left: 18px;
+  font-size: 30px;
+}
+
+input[type=checkbox]:focus{
+  outline: 0;
+}
+.why{
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+}
+.high{
+  color: white;
+  font-size: 18px;
+}
+.meme{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: -60px;
+  margin-left: 70px;
+  position: absolute;
+}
+.man{
+  border: 10px;
+  width: 100%;
+  height: 30px;
+  vertical-align: bottom;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  background-color: black;
+}
+
+.imm{
+  width: 65px;
+  height: 65px;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+.pin{
+  color: white;
+  margin-top: -200px;
+  position: absolute;
+  margin-left: 60px;
+  font-size: 22px;
+  font-family: arial;
+  
+}
+.gen{
+  width: 50px;
+  height: 30px;
+  background-color: white;
+  color: darkslateblue;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: arial;
+  margin-left: 150px;
+  margin-top: -80px;
+  position: absolute;
+}
+.you{
+  width: 320px;
+  height: 220px;
+  margin-left: 20px;
+
+}
+.yo{
+  height: 30px;
+}
