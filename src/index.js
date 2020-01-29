@@ -1,21 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import tododata from './tododata'
-import Todo from './Todo';
+import tododata from './main/tododata'
+import Todo from './main/Todo';
 import Jokes from './Jokes';
 import jokesdata from './Jokesdata';
-import product from './product'
-import Meme from './meme'
-import Stars from './starr'
-import Brand from './Brand'
-import Myform from './myform'
+import product from './main/product'
+import Meme from './main/meme'
+import Stars from './main/starr'
+import Brand from './main/Brand'
+import Myform from './main/myform'
 import Islogged from './lggedin'
 import Conditional from './conditional'
 import Messages from './message'
-import Starwars from './starwars'
+import Starwars from './main/starwars'
 import Contactcard from './Contactcard';
 import * as serviceWorker from './serviceWorker';
+import {BrowserRouter as Router,Route,Link,Switch,Redirect} from "react-router-dom"
 
 
 class Messi extends React.Component{
@@ -100,6 +101,8 @@ class MyApp extends React.Component {
        
           let mytodo = this.state.todo.map(item => <Todo key={item.id} item ={item}
              Handlechange={this.Handlechange} />)
+
+           //  let myform = Myform
        
            const date = new Date();
            const hour = date.getHours();
@@ -123,8 +126,9 @@ class MyApp extends React.Component {
            return(
                
             <div className="todolist" >
+                
             <Meme/><br/><br/><br/>
-            <Myform/>
+            
             <h3>{this.state.count}</h3>
             <button onClick={this.Handleclick}>Change</button>
             <Conditional isloading={this.state.isloading}/>
@@ -140,7 +144,7 @@ class MyApp extends React.Component {
                 <Starwars/>
                {myjokesdata}
                
-               
+               <Myform/>
                 <Contactcard 
                 name="Mr. Whitekerson" 
                 imgUrl="http://placekitten.com/300/200"
